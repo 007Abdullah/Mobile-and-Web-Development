@@ -1,0 +1,4 @@
+CSS Selector
+
+A[attr] - Element with specific Attribute
+A[attr=val] - Attribute whose value is exactly value

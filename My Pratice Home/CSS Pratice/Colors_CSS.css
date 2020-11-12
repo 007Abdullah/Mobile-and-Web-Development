@@ -1,0 +1,142 @@
+p.one {
+    background-color: #eeeeee;
+    color: #666666;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+p.two {
+    background-color: #dddddd;
+    color: #666666;
+    text-shadow: 1px 1px 3px #666666;
+}
+
+p.three {
+    background-color: #cccccc;
+    color: #ffffff;
+    text-shadow: 2px 2px 7px #111111;
+}
+
+p.four {
+    text-indent: 1.0em;
+    background-size: cover;
+    background-color: #bbbbbb;
+    color: #cccccc;
+    text-shadow: -1px -2px #666666;
+}
+
+p.five {
+    background-color: #aaaaaa;
+    color: #ffffff;
+    text-shadow: -1px -1px #666666;
+}
+
+
+/* body {
+    background-color: silver;
+    color: white;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    background-color: #ffffff;
+    background-color: hsla(0, 100%, 100%, 0.5);
+    color: #64645A;
+    padding: inherit;
+}
+
+p {
+    padding: 5px;
+    margin: 0px;
+}
+
+p.zero {
+    background-color: rgb(238, 62, 128);
+}
+
+p.one {
+    background-color: rgb(244, 90, 139);
+}
+
+p.two {
+    background-color: rgb(243, 106, 152);
+}
+
+p.three {
+    background-color: rgb(244, 123, 166);
+}
+
+p.four {
+    background-color: rgb(245, 140, 178);
+}
+
+p.five {
+    background-color: rgb(246, 159, 192);
+}
+
+p.six {
+    background-color: rgb(245, 176, 204);
+}
+
+p.seven {
+    background-color: rgb(0, 187, 136);
+}
+
+p.eight {
+    background-color: rgb(140, 202, 242);
+}
+
+p.nine {
+    background-color: rgb(114, 193, 240);
+}
+
+p.ten {
+    background-color: rgb(84, 182, 237);
+}
+
+p.eleven {
+    background-color: rgb(48, 170, 233);
+}
+
+p.twelve {
+    background-color: rgb(0, 160, 230);
+}
+
+p.thirteen {
+    background-color: rgb(0, 149, 226);
+}
+
+p.fourteen {
+    background-color: rgb(0, 136, 221);
+}
+
+
+/* body {
+    background-color: #c8c8c8;
+    background-color: hsl(0, 0%, 78%);
+}
+
+h1 {
+    background-color: DarkCyan;
+}
+
+h2 {
+    background-color: #ee3e80;
+}
+
+p {
+    background-color: #ffffff;
+    background-color: hsla(0, 100%, 100%, 0.5);
+}
+
+.one {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+}
+
+.two {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+} */
+
+*/

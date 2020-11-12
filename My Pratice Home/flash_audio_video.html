@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+
+
+<body>
+    <video src="Videos/puppy.mp4" poster="Images/puppy.jpg" width="400" height="300" preload controls>
+        <p> A video of a puppy playing in the snow </p>
+    </video>
+    <br />
+    <br />
+    <hr />
+    <h2> Multiple Video
+        Sources</h2>
+
+    <video poster="Images/lemon-tea.jpg" width="400" height="300" preload controls loop>
+        <source src="Videos/puppy.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' />
+        <source src="Videos/puppy.mp4.webm" type='video/webm;codecs="vp8, vorbis"'>
+        <p>A video of a puppy playing in the snow</p>
+    </video>
+    <hr />
+    <br />
+    <br />
+    <br />
+    <br />
+    <hr />
+    <h2> Adding HTML5 Audio to Your Pages </h2>
+    <audio src="audio_mp3/file_example_MP3_700KB.mp3" preload controls>
+        <p>The Does Not Support</p>
+    </audio>
+    <br />
+    <h2>Multiple Audio Source</h2>
+    <audio controls preload autoplay loop>
+        <source src="audio_mp3/file_example_MP3_700KB.mp3">
+        <source src="audio_mp3/file_example_OOG_1MG.ogg">
+        <p>This browser does not support our audio
+            format.</p>
+    </audio>
+</body>
+
+</html>

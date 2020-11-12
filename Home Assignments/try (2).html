@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>try</title>
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" type="text/css"  href="">
+</head>
+<script>
+function log()
+{
+	var un = document.getElementById('mail').value;
+	var ps = document.getElementById('code').value;
+	
+if(un == "sameer@gmail.com" && ps == "12345" )
+{
+	alert("welocome");
+}
+else if(un == "" && ps == "")
+{
+	alert("PLease Enter Username and password");
+
+
+}
+
+else if(un != "sameer@gmail.com")
+{
+	alert("invalid username");
+}
+else if(ps != "12345")
+{
+	alert("invalid password");
+}
+}
+
+function new_window()
+{
+	if(confirm("Do you want to Create Account"))
+	{
+		window.open("create.html","_blank");
+	}
+	else
+	{
+		window.alert("In the Current Window");
+	}
+}
+</script>
+<style>
+body{
+	width:100%;
+	background-image:url(Website-Design-Background.png);
+	background-attachment:fixed;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.box{
+	width:500px;
+	height:500px;
+	background-color:rgba(0,0,0,0.2);
+	border:2px solid #000;
+	margin-top:250px;
+	border-radius:100px;
+	opacity:0.9;
+	box-shadow:5px 5px 5px 2px;
+}
+table
+{
+	width:100px;
+	height:150px;
+	margin:110px; 
+}
+h2{
+	text-align:center;
+	font-size:xx-large;
+	color:#CCC;
+}
+.search{
+	width:190px;
+	height:20px;
+	border:1px solid #000;
+	font-size:14px;
+	color:#000;
+}
+.txt 
+{
+	font-size:18px;
+	color:#000;
+	text-align:center;
+	alignment-adjust:auto;
+	alignment-baseline:central;
+	background-attachment:fixed;
+	display:marker;
+	
+}
+</style>
+
+<body>
+<center><div class="box">
+<h2>Login</h2>
+<table>
+	<tr>
+    <td class="txt">Username:</td>
+    <td><input type="text" placeholder="Username" id="mail" class="search"/></td>
+    </tr>
+    <tr>
+    <td class="txt">Password:</td>
+    <td><input type="password" placeholder="Password" id="code" class="search"/></td>
+    </tr>
+    <tr>
+    <td><input type="button" name="Login" value="Login" onClick="log()"/></td>
+    <td><input type="button" name="Create an account"  onClick="new_window();" value="Create an account"/></td></a>
+    </tr>
+</table>
+</div></center>
+</body>
+</html>

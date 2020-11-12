@@ -1,0 +1,27 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+@font-face{
+    font-family: "Abdullah";
+    src: url(fonts/Roboto-Italic.ttf);
+    src: url(fonts/Roboto-Medium.ttf);
+}
+h1{
+    font-family:"Abdullah-Italic";
+}
+h2{
+    font-family: "Abdullah-Medium";
+}

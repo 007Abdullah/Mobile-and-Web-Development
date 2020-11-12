@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Position Elements </title>
+    <style type="text/css">
+        .box{
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+            margin: 12px;
+            display: inline-block;
+        }
+        /* Relative position its working on normal position  */
+        #box3{
+            position: relative;
+            left: 45px;
+        }
+        /* Absolute jo han wo screen sa start ho ga mtlb apnai normal flow sa bahar ho kar screen kae hisab sa set hoga */
+        #box4{
+            position: absolute;
+            top: 15px;
+            left: 25px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1">45</div>
+    <div class="box" id="box2">5456</div>
+    <div class="box" id="box3">856</div>
+    <div class="box" id="box4">47269</div>
+</body>
+
+</html>

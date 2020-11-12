@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    height: 667px;
+    background-color: aqua;
+}
+.image{
+    width: 50%;
+    background-color: black;
+    margin: 0px auto 10px auto;
+}
+.image img{
+    width: 100%;
+}
+.btns{
+    margin-top: -9px;
+    background-color: blue;
+    padding-left: 385px;
+    
+}
+ .btn1 , .btn2 , .btn3{
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    
+}
+button[class="btn3"]{
+    margin-left: 550px;
+    
+}

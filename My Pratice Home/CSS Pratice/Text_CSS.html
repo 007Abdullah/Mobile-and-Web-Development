@@ -1,0 +1,129 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text CSS Properties</title>
+    <style type="text/css">
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        h1,
+        h2 {
+            background-image: url("../Images/Gif-008-T_large.gif");
+            background-repeat: no-repeat;
+            text-indent: -9999px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 200%;
+            font-size: 1.3em;
+            font-weight: oblique;
+            text-transform: uppercase;
+            text-decoration: overline;
+            line-height: 2.4em;
+            letter-spacing: 0.2em;
+            word-spacing: 1em;
+            text-align: left;
+            vertical-align: top;
+        }
+        
+        .credits {
+            font-family: "Courier New", Courier, monospace;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-style: italic;
+            text-decoration: underline;
+            word-spacing: 1em;
+            text-align: start;
+            text-indent: 20px;
+        }
+        
+        p.intro:first-letter {
+            font-size: 200%;
+        }
+        
+        p.intro::first-line {
+            font-weight: bold;
+        }
+        
+        p::first-line {
+            font-weight: bold;
+        }
+        
+        a:link {
+            color: deeppink;
+            text-decoration: none;
+        }
+        
+        a:visited {
+            color: black;
+        }
+        
+        a:hover {
+            color: deeppink;
+            text-decoration: underline;
+        }
+        
+        a:active {
+            color: darkcyan;
+        }
+        
+        input {
+            padding: 6px 12px 6px 12px;
+            border: 1px solid #665544;
+            color: #ffffff;
+        }
+        
+        input.submit:hover {
+            background-color: #665544;
+        }
+        
+        input.submit:active {
+            background-color: chocolate;
+        }
+        
+        input.text {
+            color: #cccccc;
+        }
+        
+        input.text:focus {
+            color: #665544;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <ul>
+            <a href="#">
+                <li>Home</li>
+            </a>
+            <a href="#">
+                <li>Blog</li>
+            </a>
+            <a href="#">
+                <li>Contact Us</li>
+            </a>
+            <a href="#">
+                <li>About Us</li>
+            </a>
+
+        </ul>
+    </table>
+    <input type="text" name="email" placeholder="Enter an Email Address">
+    <input type="submit" class="submit" value="Submit" name="submit">
+    <h1>Briards</h1>
+    <p class="credits"> >by Ivy Duckett </p>
+
+    <p class="intro">
+        The
+        <a href="http://en.wikipedia.org/wiki/
+        Briard" class="breed"> Briard </a>. or berger de brie, is a large breed of dog traditionally used as a herder and guardian of sheep...
+    </p>
+    <h2>Breed History</h2>
+    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content
+        here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+        Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+.main{
+    width: 100%;
+   
+}
+
+table{
+    border-spacing: 15px;
+    margin:10px auto 10px auto ;    
+}
+th{
+    letter-spacing: 0.1em;
+    border-top: 2px solid rgb(153, 153, 153);
+    border-bottom: 2px solid black;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+}
+th, td {
+    padding: 7px 10px 10px 10px;
+    
+
+}
+.money{
+    text-align: right;
+    
+}
+.even{
+    background-color: #efefef;
+}
+.even:hover{
+    background-color: #c3e6e5;
+} 
+table.Second{
+    empty-cells: hide;
+    border-collapse: collapse;
+} 
+
+input{
+    font-size: 120%;
+    color:  #5a5854;
+    background-color: #f2f2f2;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding:  5px 5px 5px 30px;
+    background-repeat: no-repeat;
+    background-position: 8px; 
+    display: block;
+    margin-bottom: 10px;
+}
+#email{
+    background-image: url("../Images/PNG/email-png.png");
+}

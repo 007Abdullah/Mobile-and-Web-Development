@@ -1,0 +1,83 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.main{
+
+    margin: 10px;
+}
+
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    min-width: 550px;
+    max-width: 250px;
+    text-align: justify;
+    margin: 10px auto 10px auto;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    letter-spacing: 0.1em;
+    word-spacing: 0.1em;
+    text-shadow:  1px 1px 3px  #666666;
+}
+p::first-line{
+    font-size:larger;
+}
+p::first-letter{
+    font-size: 200px;
+}
+/* Existence Selector specific attribute ko select karay ga jo jo tag kae andr majood hoga ek sa zaida tag ma he ku na ho */
+img[title]{
+    border: 3px solid red;
+}
+input[type]{
+    border: 2px solid tomato;
+}
+a[target]{
+    color:yellow;
+    font-size: 25px;
+
+}
+/* Equality " Attribute whose value is exactly value ya apnai attribute kii value kae sath match karay ga" */
+input[type="text"]{
+    border: 2px solid green;
+}
+input[type="password"]{
+    border: 2px solid salmon;
+}
+img[title="flower"]{
+    border: 2px solid purple;
+}
+img[alt="Image of cat"]{
+    border-top: 4px solid blue;
+
+}
+/* Prefix Attribute begin value ya start kii value match karay ga attribute kii "^" */
+input[placeholder="Enter"]{
+    
+    border-top:4px solid blue ; /*Ya nhi chlay ge ku kae ya first word han porii complete attribute kii value same nhi ha*/
+}
+/* ya is case ma chal jay ge Prefix ma ^ start value check karta han bus */
+input[placeholder^="Enter"]{
+    
+    border-top:4px solid red; /*Ya nhi chlay ge ku kae ya first word han porii complete attribute kii value same nhi ha*/
+}
+/* Suffix Attribute End with  selector  */
+img[alt $= "t"]{
+    border: 5px solid peru;
+}
+input[value $= "Female"]{
+    margin-left: 55px;
+
+}
+/* SubString Value occurs anywhere in attribute "*" ya attribute ki start ya center ya and ma jo value be match karay ga  */
+img[title *= "of"]{
+    border:4px solid turquoise;
+}
+ 
+/* Space "~" Value matches attribute in space separated list. iska mtlb ya han ap jo be value 
+use kar rahay hayn agay pechay space hona zarori han */
+
+
+
