@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> FlexBox </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navigation {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-end;
+
+            list-style: none;
+            margin: 0;
+            background: deepskyblue;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            display: block;
+            padding: 1em;
+            color: white;
+        }
+
+        .navigation a:hover {
+            background: #1565C0;
+        }
+
+        @media all and (max-width: 800px) {
+            .navigation {
+                justify-content: space-around;
+            }
+        }
+
+        @media all and (max-width: 600px) {
+            .navigation {
+                flex-flow: column wrap;
+                padding: 0;
+            }
+
+            .navigation a {
+                text-align: center;
+                padding: 10px;
+                border-top: 1px solid rgba(255, 255, 255, 0.3);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            }
+
+            .navigation li:last-of-type a {
+                border-bottom: none;
+            }
+        }
+
+        section {
+            width: 100%;
+            background-color: cyan;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        section div {
+            width: 30%;
+            flex-basis: 30%;
+            padding: 20px;
+            border: 1px solid black;
+            margin: 10px;
+            
+        }
+        
+        .flexone {
+            min-width: 180px;
+            background-color: brown;
+            flex: 1;
+        }
+        .flextwo {
+            background-color: cadetblue;
+            /* flex: 3; */
+        }
+        .flexthree {
+            /* flex: 1; */
+            background-color: red;
+        } 
+
+    </style>
+</head>
+
+<body>
+
+    <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <section>
+        <div class="flexone">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione totam, quisquam, assumenda nam odit optio
+            eum temporibus veniam officiis aliquam, esse cumque. Aut blanditiis magnam soluta quae, saepe quis ea?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, officiis fugiat? Itaque labore earum sequi
+            veniam, facere beatae quod repudiandae vero magnam excepturi, deserunt modi provident porro explicabo iste
+            repellat.
+        </div>
+        <div class="flextwo">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione totam, quisquam, assumenda nam odit opti
+            exercitationem!
+        </div>
+        <div class="flexthree">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione totam, quisquam, assumenda nam odit optio
+            ctetur reprehenderit sunt velit, optio consequatur. Sint ad ex eaque ratione incidunt illum
+            quisquam odit.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, officiis fugiat? Itaque labore earum sequi
+            veniam, facere beatae quod repudiandae vero magnam excepturi, deserunt modi provident porro explicabo iste
+            repellat.
+        </div>
+    </section>
+</body>
+
+</html>
