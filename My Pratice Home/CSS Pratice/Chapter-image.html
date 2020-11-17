@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images Property </title>
+    <style>
+        /* background image  */
+        /* body{
+            background-image: url("animated-pattern.gif");
+        }
+        /* background repeat and background attachment  */
+
+        /* body{
+            background-image: url("animated-pattern.gif");
+            background-repeat: repeat   ;
+            background-attachment: fixed;
+        } */
+        /* background position */
+        body {
+            background-image: url("tulip.gif");
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+
+        /* body{
+            background-image: url("tulip.gif");
+            background-repeat: no-repeat;
+            background-position: right bottom ;
+        } */
+        img.align-left {
+            float: left;
+            margin-right: 10px;
+        }
+
+        img.align-right {
+            float: right;
+            margin-left: 10px;
+
+        }
+
+        img.medium {
+            width: 250px;
+            height: 250px;
+
+        }
+
+        img.align-center {
+            display: block;
+            margin: 0px auto;
+        }
+
+        img.center {
+            width: 250px;
+            height: 250px;
+        }
+
+        a.button {
+            height: 36px;
+            background-image: url("button-sprite.jpg");
+            
+            display: inline-block;
+        }
+
+        a#add-to-basket {
+            width: 174px;
+            background-position: 0px 0px;
+        }
+
+        a#framing-options {
+            width: 210px;
+            background-position: -175px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        <img src="magnolia.jpg" alt="magnolia" class="align-left medium">
+        <b><i>Magnolia</i></b> is a large genus that
+        contains over 200 flowering plant species...
+    </p>
+    <p>
+        <img src="magnolia.jpg" alt="magnolia" class="align-right medium">
+        Some magnolias, such as <i>Magnolia stellata</i>
+        and <i>Magnolia soulangeana</i>, flower quite
+        early in the spring before the leaves open...
+    </p>
+    <h2 style="text-align: center;">
+        Centering Image
+    </h2>
+    <p>
+        <img src="magnolia.jpg" alt="magnolia" class="align-center center">
+        <b><i>Magnolia</i></b> is a large genus that
+        contains over 200 flowering plant species. It
+        is named after French botanist Pierre Magnol and,
+        having evolved before bees appeared, the
+        flowers were developed to encourage pollination
+        by beetle.</p>
+    </p>
+    <a class="button" id="add-to-basket">
+        Add to basket</a>
+    <a class="button" id="framing-options">
+        Framing options</a>
+
+</body>
+
+</html>
