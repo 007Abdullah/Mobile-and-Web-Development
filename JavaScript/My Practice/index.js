@@ -15,7 +15,7 @@ var MyNactionality;
 // value to it in a later statement, without declaring it again
 MyNactionality = "U.S";
 
-alert(MyNactionality);
+alert(MyNactionality + name);
 
 
 var Thank = "Thanks for your inputs!";
