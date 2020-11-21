@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculation Application </title>
+</head>
+
+<body>
+    <form name="myform">
+        <label>First Number </label> :
+        <input type="number" id="firstNum">
+        
+        <label>Second Number </label> :
+        <input type="number" id="secondNum">
+        
+        <input type="text" name="result">
+        
+        <input type="button" value="Add" onclick="adds();">
+        
+       
+
+        <!-- <script src="Calculation-Application.js"></script> -->
+    </form>
+    
+    <script>
+        function adds() {
+            var num1 = parseInt(document.getElementById("firstNum").value);
+            var num2 = parseInt(document.getElementById("secondNum").value);
+            var sum = num1+num2;
+            myform.result.value = sum;
+        }
+
+    </script>
+
+</body>
+
+</html>
