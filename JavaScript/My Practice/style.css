@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    position: relative;
+    top: 110px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#row1{
+    
+    margin-top: 150px;
+}
+.centers{
+    width: 320px;
+    height: 320px;
+    background-color:#ebebeb;
+    margin: 10px auto 10px auto;
+    overflow: auto;
+}
+#n1,#n2,#result{
+    float: right;
+    border: 1px solid black;
+    font-size: 15px;
+}
+#operators{
+    
+    padding: 5px;
+    float: left;
+    
+}
+.button{
+    padding: 5px;
+    margin: 20px;
+    margin-left: 100px;
+    border: 1px solid black;
+}
