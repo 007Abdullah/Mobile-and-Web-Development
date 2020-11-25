@@ -9,6 +9,10 @@
 
 <body>
     <form action="#" onsubmit="cal()">
+        <h2>Only Age Relaxation For Masters Age ---> 22 To 27</h2>
+        <br>
+        <br>
+
         <label> Are You Pakistani : </label>
         <select id="national">
             <option value="Yes">Yes</option>
@@ -49,9 +53,11 @@
             let age =   parseInt(document.getElementById("age").value);
 
             if((natlity == "Yes" && edution == "Mertic" || edution == "Inter" || edution == "B.Sc") && (high >= 5 && high <= 8) && (age >= 17 && age <= 22) ){
-                document.getElementById("Result").innerHTML = "You Are Eligible"
+                document.getElementById("Result").innerHTML = "You Are Eligible";
             }
-           
+            else if(edution == "Master" && age <= 27 ) {
+                document.getElementById("Result").innerHTML = "You Are Also Eligible" ;
+            }
            
             else{
                 document.getElementById("Result").innerHTML = "Sorry"
