@@ -45,26 +45,34 @@
 
     </form>
 </body>
-    <script>
-        function cal(){
-            let natlity = document.getElementById("national").value;
-            let edution = document.getElementById("Edu").value;
-            let high =  parseInt(document.getElementById("high").value);
-            let age =   parseInt(document.getElementById("age").value);
+<script>
+    function cal() {
+        let natlity = document.getElementById("national").value;
+        let edution = document.getElementById("Edu").value;
+        let high = parseInt(document.getElementById("high").value);
+        let age = parseInt(document.getElementById("age").value);
+        let check;
+        let Res = [];
 
-            if((natlity == "Yes" && edution == "Mertic" || edution == "Inter" || edution == "B.Sc") && (high >= 5 && high <= 8) && (age >= 17 && age <= 22) ){
-                document.getElementById("Result").innerHTML = "You Are Eligible";
-            }
-            else if(edution == "Master" && age <= 27 ) {
-                document.getElementById("Result").innerHTML = "You Are Also Eligible" ;
-            }
-           
-            else{
-                document.getElementById("Result").innerHTML = "Sorry"
-            }
+        if ((natlity == "Yes" && edution == "Mertic" || edution == "Inter" || edution == "B.Sc") && (high >= 5 && high <= 8) && (age >= 17 && age <= 22)) {
+            check = document.getElementById("Result").innerHTML = "You Are Eligible";
+        }
+        else if (edution == "Master" && age <= 27) {
+            check = document.getElementById("Result").innerHTML = "You Are Also Eligible";
+        }
 
+        else {
+            check = document.getElementById("Result").innerHTML = "Sorry";
 
         }
-    </script>
+
+        Res = ["Your Nationality :" + natlity,"Your Education :" + edution,"Your Hight :" + high,"Your Age :" + age,"Your Result:" + check];
+
+        alert(Res);
+
+    }
+
+
+</script>
 
 </html>
