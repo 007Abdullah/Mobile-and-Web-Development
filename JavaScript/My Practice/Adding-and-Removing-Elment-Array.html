@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding and removing elements
+    </title>
+</head>
+
+<body>
+
+</body>
+<script>
+    //How to delcare an Empty Array
+
+    let pets = []; // This an empty Array
+
+    // Assume that the array pets has already been declared.This is how you assign values to
+    //  it.
+
+    pets[0] = "Dog";
+    pets[1] = "Cat";
+    pets[2] = "Birds ";
+    pets[3] = "LOin";
+    pets[4] = "Animals";
+
+
+
+    /// This Result is Differenct 0 ,1 ,2 ,4,5 Tak Sari Value Empty Rakhe han
+    // pets[3] = "Birds";
+    // pets[6] = "Animals";
+
+    // You can assign additional values to an array that already has values. Assume that the first
+    // three elements of the array pets are "dog", "cat", and "bird".Then you write this code
+    pets[3] = "lizard";
+    pets[4] = "fish";
+    pets[5] = "gerbil ";
+    pets[6] = "snake ";
+
+    // //
+    // Now the array has 7 elements: "dog", "cat", "bird", "lizard", "fish", "gerbil", and "snake".
+    // If you assign a new value to an array element that already has one, the old value is
+    // replaced by the new one
+    // //
+    console.log(pets);
+
+    // ya last Kae index ma sa value delete karay ga or jo value 
+    // delete kare han wo return be karay ga "pop" or agar iski brektes ma koe value day ga ignore karay ga
+    pets.pop();
+    console.log(pets);
+
+    // Ya Last Kae Index Ma Value Add Karay GA or WOhe Add Value return karay ga 
+    // Ya Multiple  Values Be  Lay lay ga
+
+    pets.push("This IS Push");
+    console.log(pets);
+
+    // Ya start sa value delete karay ga jo delete kare han wo return karay ga
+    //Use the shift method to remove an element from the beginning of an array
+    pets.shift()
+    console.log(pets);
+
+    //Use the Unshift method to Add an element from the beginning of an array Multply Value Add
+    pets.unshift("Abdullah");
+    console.log(pets);
+
+
+
+</script>
+
+
+</html>
