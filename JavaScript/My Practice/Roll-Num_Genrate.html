@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Roll Number Genrate : </title>
+</head>
+
+<body>
+    <form action="#">
+
+        <label>Enter a Roll Number :</label>
+        <input type="number" id="User">
+
+        <p id="genrate_result">
+
+        </p>
+
+        <button onclick="genrate()">ADD</button>
+
+        <br>
+        <br>
+
+        <p id="arrange">
+
+        </p>
+
+        <button onclick="arrange()">Arrange</button>
+
+    </form>
+</body>
+<script>
+
+    function genrate() {
+        let roll = document.getElementById("User").value;
+        let res = document.getElementById("genrate_result").value;
+
+        for (i = 0; i <= roll; i++) {
+            console.log(roll);
+
+            break;
+            arrange(roll);
+        }
+
+    }
+
+    function arrange(erc, roll) {
+        if(erc === "2"){
+            console.log("Even");
+        }
+    }
+
+
+
+
+
+</script>
+
+</html>
