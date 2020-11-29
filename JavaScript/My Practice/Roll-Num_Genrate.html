@@ -8,47 +8,79 @@
 </head>
 
 <body>
-    <form action="#">
+    <input type="number" id="user">
+    <button onclick="Add()">Add</button>
+    <button onclick="gentrate()">Gentrate</button>
 
-        <label>Enter a Roll Number :</label>
-        <input type="number" id="User">
+    <br>
+    <h1>Add Numbers</h1>
+    <div id="Result"> </div>
 
-        <p id="genrate_result">
+    <br>
+    <h1>Even Number :</h1>
+    <br>
+    <div id="even">
 
-        </p>
+    </div>
 
-        <button onclick="genrate()">ADD</button>
+    <br>
+    <h1>ODD Number :</h1>
+    <br>
+    <div id="odd">
 
-        <br>
-        <br>
+    </div>
 
-        <p id="arrange">
 
-        </p>
 
-        <button onclick="arrange()">Arrange</button>
 
-    </form>
 </body>
 <script>
+    let x = 0;
+    let array = [];
 
-    function genrate() {
-        let roll = document.getElementById("User").value;
-        let res = document.getElementById("genrate_result").value;
-
-        for (i = 0; i <= roll; i++) {
-            console.log(roll);
-
-            break;
-            arrange(roll);
-        }
-
+    // Arrays as store values in indexing
+    function Add() {
+        array[x] = document.getElementById("user").value;
+        // console.log("Element: " + array[x] + " Added at index " + x);
+        x++;
+        document.getElementById("user").value = "";
+        display();
     }
 
-    function arrange(erc, roll) {
-        if(erc === "2"){
-            console.log("Even");
+    function display() {
+        let e = "<hr/>";
+
+        for (var y = 0; y < array.length; y++) {
+            e += "Element Index :" + y + " = " + array[y] + "<br/>";
         }
+        document.getElementById("Result").innerHTML = e;
+    }
+    function gentrate() {
+        let f = "<hr/>";
+        for (var y = 0; y < array.length; y++) {
+            if ((array[y] % 2) == 0) {
+                f += array[y] + "<br/>";
+            }
+        }
+        document.getElementById("even").innerHTML = f;
+        odd();
+    }
+    function odd() {
+        let f = "<hr/>";
+        for (var y = 0; y < array.length; y++) {
+            if ((array[y] % 2) != 0) {
+                f += array[y] + "<br/>";
+            }
+        }
+        document.getElementById("odd").innerHTML = f;
+    }
+        // for(let j = 0;j<firstarr.length;j++){
+        //     if(j%2 === 0){
+        //         console.log(j);
+        //     }
+        // }
+        // return arr;
+
     }
 
 
