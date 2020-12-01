@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ADD To Cart </title>
+</head>
+
+<body>
+
+    <button type="button" id="minus">-</button>
+    <input type="text" id="quantity" value="1" readonly style="width: 50px; text-align: center;">
+    <button type="button" id="plus">+</button>
+
+
+    <!-- will calculate prize -->
+    <p id="total-price">
+
+        <span id="price">100</span>
+    </p>
+
+</body>
+<script>
+    //setting default id to disabled of minus button
+    document.getElementById("minus").setAttribute("disabled", "disabled");
+    //value to increment decrement input value
+    let valueadd;
+    //price value in variable
+    let price = document.getElementById("price").innerText;
+
+    //price calution function
+    function priceTotal() {
+        let total = valueadd * price;
+        document.getElementById("price").innerText = total;
+    }
+
+
+
+
+    //plus button
+    document.getElementById("plus").addEventListener("click", function () {
+        //value input user
+        valueadd = document.getElementById("quantity").value;
+        //value increment
+        valueadd++;
+        //setting incremnt input value
+        document.getElementById("quantity").value = valueadd;
+
+        if (valueadd > 1) {
+            document.getElementById("minus").removeAttribute("disabled");
+            document.getElementById("minus").classList.remove("disabled");
+        }
+        priceTotal();
+    })
+
+    //minus button
+    document.getElementById("minus").addEventListener("click", function () {
+        //value input user
+        valueadd = document.getElementById("quantity").value;
+        //value decrement
+        valueadd--;
+        //setting decrement input value
+        document.getElementById("quantity").value = valueadd;
+
+        if (valueadd === 1) {
+            document.getElementById("minus").setAttribute("disabled", "disabled");
+        }
+        priceTotal();
+    })
+
+</script>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let user = parseInt(prompt("Enter a number of Factorial :"));
+    let i;
+    let fact = 1;
+    if (user < 0) {
+        document.write("Factorial number not a negative.");
+    }
+    else {
+        for (i = 1; i <= user; i++) {
+            fact *= i;
+        }
+        document.write("User Enter Number Factorial find  :" + user + "<br/>");
+        document.write("Factorial Result :" + fact);
+    }
+</script>
+
+</html>

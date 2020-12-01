@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even Odd Find</title>
+</head>
+
+<body>
+    <h1>User Enter Even Number : </h1>
+    <p id="even">
+
+    </p>
+    
+    <h2>User Enter Odd Number :</h2>
+    <p id="odd">
+
+    </p>
+</body>
+
+    <script>
+        let user;
+        let even = [];
+        let odd = [];
+        for(i = 1;i <= 10;i++ ){
+            user = parseInt(prompt("Enter Any Number"));
+            if((user%2)===0){
+                even.push(user);
+            }
+            else{
+                odd.push(user);
+            }
+        }
+        document.getElementById("even").innerText = even;
+        document.getElementById("odd").innerText = odd;
+
+        
+
+
+    </script>
+
+</html>
