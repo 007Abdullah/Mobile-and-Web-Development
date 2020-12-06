@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Multi Deminstion Array Sum </title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    //   2 arrays ans sum 3rd array   
+    // let arr1 = [2, 4, 6, 8];
+    // let arr2 = [2, 4, 5, 2];
+    // let arr = []; // 4 , 8 , 11 , 10 output
+
+    // // arr1.splice(1,2,4,4);
+    // // console.log(arr1)
+    // for (i = 0; i < arr1.length; i++) {
+    //     arr.push(arr1[i] + arr2[i]);
+
+    // }
+
+    let arr1 = [
+        [0, 0],
+        [0, 0]
+    ]
+    let arr2 = [
+        [0, 0],
+        [0, 0]
+    ]
+    let Result = [
+        [0, 0],  //0
+        [0, 0] // 1
+
+    ]
+    //     let sum ;
+    // let arr3 = [];
+    document.write("Matrix A (2 x 2):<br>");
+    for (i = 0; i < arr1.length; i++) {
+        for (j = 0; j < arr1[i].length; j++) {
+            arr1[i][j] = +prompt("Enter No Of Mertix : " + i + j);
+            document.write( arr1[i][j]+ " ");
+        }
+        document.write("<br>")
+    }
+    document.write("Matrix B (2 x 2):<br>");
+    for (i = 0; i < arr2.length; i++) {
+        for (j = 0; j < arr2[i].length; j++) {
+            arr2[i][j] = +prompt("Enter No Of Mertix : " + i + j);
+            document.write( arr2[i][j]+ " ");
+        }
+        document.write("<br>")
+    }
+    
+    for (i = 0; i < Result.length; i++) {
+        for (j = 0; j < Result[i].length; j++) {
+            Result[i][j] = arr1[i][j] + arr2[i][j]
+                // result[i][j] = mat1[ ][ ] * mat2[ ][ ] + mat1[ ][ ] * mat2[ ][ ]
+        }
+    }
+    document.write("Result"+"<br>")
+    document.write(Result);
+    // for (j = 0; j < arr2.length; j++) {
+    //     console.log(arr3.push(arr1[j]));
+    // }
+    // document.write(arr3);
+    // arr3[1];
+    // console.log(sum);
+</script>
+
+
+</html>
