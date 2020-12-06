@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login In</title>
+</head>
+
+<body>
+    welcome ... <span id="result"></span>
+    <br>
+    <br>
+    <label>User Name:</label>
+    <input type="email" name="email" id="emails" required>
+
+    <br>
+    <br>
+    <label>Password:</label>
+    <input type="password" name="password" id="passwords" required>
+    <br>
+    <br>
+    <button onclick="login()">Login</button>
+
+</body>
+<script>
+    document.getElementById("result").innerHTML = localStorage.getItem("name");
+
+    function login() {
+
+        let email = localStorage.getItem("email");
+        let password = localStorage.getItem("Passoerd");
+        let Username = document.getElementById("emails").value;
+        let Password = document.getElementById("passwords").value;
+
+        if (email === Username && password === Password) {
+            console.log("WelCome");
+        }
+        else {
+            console.log("Invalid");
+        }
+
+    }
+</script>
+
+</html>
