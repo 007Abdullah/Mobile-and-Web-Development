@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Martix 2 by 2 Multiply</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+    let Martix1 = [
+        [0, 0],
+        [0, 0]
+    ]
+    let Martix2 = [
+        [0, 0],
+        [0, 0]
+    ]
+    let Result = [
+        [0, 0],
+        [0, 0]
+    ]
+
+    for (i = 0; i < Martix1.length; i++) {
+        for (j = 0; j < Martix1[i].length; j++) {
+            Martix1[i][j] = +prompt("Enter Martix No ONE " + i + j);
+        }
+    }
+
+
+    for (i = 0; i < Martix2.length; i++) {
+        for (j = 0; j < Martix2[i].length; j++) {
+            Martix2[i][j] = +prompt("Enter Martix No ONE " + i + j);
+        }
+    }
+
+
+    for (i = 0; i < Result.length; i++) {
+        for (j = 0, k = 0; j < Result[i].length; j++) {
+            Result[i][j] = Martix1[i][k] * Martix2[k][j] + Martix1[i][k + 1] * Martix2[k + 1][j]
+        }
+    }
+    console.log(Result);
+            // result[i][j] = mat1[0][0] * mat2[0][1] + mat1[0][1] * mat2[1][1]
+            // result[i][j] = mat1[1][0] * mat2[0][0] + mat1[1][1] * mat2[1][0]
+            // result[i][j] = mat1[1][0] * mat2[0][1] + mat1[1][1] * mat2[1][1]
+</script>
+
+</html>
