@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+
+<body>
+    <a href="index.html"><button>Log Out</button></a>
+    <label>Welcome</label>
+    <span style="text-align: center;" id="Name"> </span>
+    <br>
+    <br>
+    <br>
+    <label>Email :</label>
+    <span style="text-align: center;" id="Email"> </span>
+    <br>
+    <br>
+    <br>
+    <label>Gender :</label>
+    Male :
+    <span style="text-align: center;" id="male"> </span>
+    <br>
+    <br>
+    Female :
+    <span style="text-align: center;" id="female"> </span>
+</body>
+<script>
+    document.getElementById("Name").innerHTML = localStorage.getItem("name");
+    document.getElementById("Email").innerHTML = localStorage.getItem("email");
+    document.getElementById("male").innerHTML = localStorage.getItem("male");
+    document.getElementById("female").innerHTML = localStorage.getItem("female");
+
+</script>
+
+</html>
