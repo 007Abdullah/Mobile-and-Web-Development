@@ -26,12 +26,98 @@
     // let resut = name.slice(-5);
     // console.log(resut);
 
-    let month = prompt("Enter Month");
-    let charisMonth = month.length;
-    if(charisMonth > 3){
-        monthAbbrev = month.slice(0, 3);
-        console.log( monthAbbrev);
-    }
+
+    // Upper And Lower Case and every string act like an array every string and array both are
+    // start with 0 index 
+
+    // let citytocheck = "Boston";
+    // let firstChar = citytocheck.slice(0, 2);
+    // let someChar = citytocheck.slice(2, 5);
+    // firstChar = firstChar.toUpperCase();
+    // someChar = someChar.toLowerCase();
+    // console.log(firstChar);
+    // console.log(someChar);
+
+    // how many characters are in a string.For example, suppose
+    // you want to slice the first three characters from any string than exceeds three characters in
+    //     length, for example, slicing "Nov" from "November".
+
+    // let month = prompt("Enter Month :");
+    // let charsInMonth = month.length;
+    // if(charsInMonth > 3){
+    //     monthAbbrev = month.slice(0,3);
+    // }
+    // console.log(monthAbbrev);
+
+    // suppose you want to loop through a string, checking to see if it has any double spaces
+    // in it.You can use the character count as the loop limiter.Here's some code that checks for
+    //     double spaces in a string and displays an alert if they're found.
+
+    // let str = prompt("Enter Some Text :");
+    // let sa = str.replace(/\s{1,}/g, ' ');
+    // console.log(sa);
+
+    // this is not efficient way
+
+    let text = "Lorem Ipsum is simply dummy  World War II text of! the printing and typesetting industry. Lorem Ipsum has been the industry's World War II  standard dummy text ever  World War II since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+
+    // for (i = 0; i < text.length; i++) {
+    //     if (text.slice(i, i + 12) === "World War II") {
+    //         text = text.slice(0, i) + "the Second World War" + text.slice(i + 12);
+    //         console.log(text);
+    //     }
+    // }
+
+    // But JavaScript has a more efficient way to accomplish this, using the indexOf method.
+    // this is efficient way
+    // find karay ga kae World War II agar aisa hoga tu usko chnage karay ga karday ga usko
+    // var firstChar = text.indexOf("World War II");
+    // if (firstChar !== -1) {
+    //     text = text.slice(0, firstChar) + "the Second World War" + text.slice(firstChar + 12);
+    // }
+    // console.log(firstChar);
+
+
+
+    /// Find Character at a loction
+
+    // let firstname = "Abdullah";
+    // let firstChar = firstname.charAt(0);
+    // let lastChar = firstname.charAt(firstname.length - 1);
+    // let check = firstname.indexOf("d");
+    // console.log(firstChar);
+    // console.log(lastChar);
+    // console.log(check);
+
+    //The following code cycles through a string looking for an exclamation point. If the
+    // character is found, an alert displays.
+
+    // for (i = 0; i < text.length; i++) {
+    //     if (text.charAt(i) === "!") {
+    //         alert("Exclamation point found!");
+    //         break;
+    //     }
+    // }
+
+
+    //In previous chapters you learned two different ways to replace "World War II" with "the
+    //Second World War" in a string. First, there was the loop-and-slice approach//
+
+    //But JavaScript provides a more straightforward way still, the replace method.
+
+    let newText = text.replace("World War II", "The Second World War Abdullah");
+    console.log(newText); // ya is nai copy bana kar day de han mager original ma change nhi kiya han
+        
+   // ab ma global replace karo ga takae jaha World War II  han waha replace ho jay
+
+   let globl_replace = text.replace(/World War II/g,"The Second World War Abdullah");
+        console.log(globl_replace);
+
+
+        
+
+
 </script>
+
 
 </html>
