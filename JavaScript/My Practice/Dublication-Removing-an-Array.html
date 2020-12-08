@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dublication-Removing-an-Array</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+
+    let arr = [1, 2, 3, 4, 5, 3, 2, 1, 5, 4];
+    document.write("This Array Removing Dublication --->" + arr);
+    document.write("<br>")
+    let Show = [];
+
+    for (i = 0; i < arr.length; i++) {
+        if (Show.indexOf(arr[i]) === - 1) {
+            Show.push(arr[i]);
+        }
+    }
+    document.write("<br>")
+    document.write("Result :" + Show.join(""));
+
+
+</script>
+
+</html>
