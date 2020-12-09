@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Numbr Gussing Game </title>
+</head>
+
+<body>
+
+
+    <form onsubmit="return  Fadd()">
+        <h1> You Guess Any Number Your Result 19998 </h1>
+        <h3> User Turn First : Enter Any Four Numbers</h3>
+        <input type="text" name="number" id="UserInp" maxlength="4" onkeyup="this.value=this.value.replace(/[^\d]/,'')">
+        <button> First Turn Result</button>
+        <h3> Computer Turn Think</h3>
+        <label id="ComputerResult"></label>
+
+    </form>
+    <br>
+    <br>
+    <br>
+
+    <form onsubmit="return  Sadd()">
+        <h3> User Turn Second : Enter Any Four Numbers</h3>
+        <input type="text" name="number" id="SUserInp" maxlength="4"
+            onkeyup="this.value=this.value.replace(/[^\d]/,'')">
+        <button> Second Turn Result</button>
+        <h3> Computer Turn Think</h3>
+        <label id="SComputerResult"></label>
+        <h1 id="Result"></h1>
+    </form>
+
+    
+</body>
+<script>
+    let user1;
+    let res1;
+    let sums;
+    function Fadd() {
+
+
+
+        user1 = parseInt(document.getElementById("UserInp").value);
+        let Compter1 = parseInt(document.getElementById("ComputerResult").value);
+        res1 = 9999 - user1;
+        document.getElementById("ComputerResult").innerHTML = res1;
+
+
+
+        return false;
+    }
+    let user2;
+    let res2;
+    function Sadd() {
+        user2 = parseInt(document.getElementById("SUserInp").value);
+        let Compter2 = parseInt(document.getElementById("SComputerResult").value);
+        res2 = 9999 - user2;
+        document.getElementById("SComputerResult").innerHTML = res2;
+        sum();
+        return false;
+       
+    }
+    function sum() {
+        sums = parseInt(user1 + res1 + user2 + res2);
+        document.getElementById("Result").innerHTML = "Your Result See Your Top  I Find Result Already :"+sums;
+    }
+
+
+
+</script>
+
+</html>
