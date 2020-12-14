@@ -25,7 +25,10 @@
 </body>
 
     <script>
-        document.getElementById("emls").innerHTML = localStorage.getItem("email");
+        let restValue = 0;
+        let sa  = JSON.parse(localStorage.getItem("email")); 
+        document.getElementById("emls").innerHTML = sa;
+       
     </script>
 
 </html>
