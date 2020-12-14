@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function In Javascript</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+    // Function Expression
+    var myfun1 = function show() {
+        document.write("This Function is Expression Function");
+    }
+    // This function is Anonymous Function
+    var myfun2 = function () {
+        document.write("This function is Anonymous Function");
+    };
+    // Arrow Function
+
+    var myfun = () => {
+        document.write("This function is Arrow funtion");
+    };
+    myfun();
+
+    // Arrow Function with parameter
+
+    var myfun3 = (num1, num2) => {
+        sum = num1 + num2;
+        console.log(sum);
+    };
+    myfun3(50, 50); // this function is parameter funtion
+
+    // Arrow funtion with rest parameter 
+
+    var fun4 = (num1, ...args) => {
+        document.write(num1 + " " + args);
+    };
+
+    fun4( 45, 32, 56, 56, 568, 45, 4, 12, 45, 87, 8, 58, 54, 67, 87, 9864, 5, 56, 48, 7, 45, 4, 456, 48, 5, 6);
+</script>
+
+</html>
