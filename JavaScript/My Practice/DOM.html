@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model </title>
+    <style>
+        .hidden {
+            display: none;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Zip Value through javascript -->
+    <!-- <form action="#">
+        ZIP:<br>
+        <input type="text" id="zip" onBlur="fillCity();"><br>
+        City:<br>
+        <input type="text" id="city">
+    </form> -->
+    <!-- expend paragraph thorugh javascript
+    <p id="slowLoris">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ipsa qui aut corporis inventore? Harum
+        praesentium cupiditate distinctio iure fugit? Temporibus asperiores a atque dicta ab molestias iure quasi
+        voluptatum.
+        <a href="javascript:void(0);" onClick="expandLoris();"><em>Click For More</em></a>
+    </p> -->
+
+    <!-- this div working through javascript create order list -->
+    <!-- <div id="cityList">
+
+    </div> -->
+
+    <!-- Manipulating images and text
+    <img src="cat.jpg" alt="Cat" id="ugly" onclick="makeInvisible();"> -->
+
+
+    <!-- Swapping images  -->
+
+    <!-- <img src="cat.jpg" alt="cat.jpg" id="before" onmouseover="swapPic();"> -->
+
+    <!-- <p>This bed is too small.</p>
+    <p>This bed is too big.</p>
+    <p>This bed is just right.</p> -->
+
+    <!-- table changes color through javascript  -->
+    <table id="tableChnge">
+        <tr>
+            <td>One</td>
+            <td>Two</td>
+            <td>Eight</td>
+        </tr>
+        <tr>
+            <td>four</td>
+            <td>Three</td>
+            <td>nine</td>
+        </tr>
+    </table>
+
+    <div id="ny">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, earum dolores maxime ea praesentium quaerat
+            neque, commodi dolorem dolorum repellendus molestiae ullam odio nesciunt mollitia facere labore deserunt
+            repudiandae odit!</p>
+        <p>Sameer Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, earum dolores maxime ea praesentium
+            quaeratneque, commodi dolorem dolorum repellendus molestiae ullam odio nesciunt mollitia facere labore
+            deserunt
+            repudiandae odit! </p>
+        <p>Abdullah quaeratneque, commodi dolorem dolorum repellendus molestiae ullam odio nesciunt mollitia facere
+            labore deserunt
+            repudiandae odit!</p>
+    </div>
+</body>
+<script>
+    // div get para last and text overwrite 
+    var div = document.getElementById("ny");
+    var para = div.getElementsByTagName("p");
+    var content = para[2].innerHTML = "Maina Kha tha na kae tu pagal ho jay ge";
+
+
+
+
+
+    // var tble = document.getElementById("tableChnge");
+    // var cells = tble.getElementsByTagName("td");
+    // var row = tble.getElementsByTagName("tr");
+    // for (i = 0; i < cells.length; i++) {
+    //     cells[i].style.border = "1px solid black";
+    // }
+
+
+
+
+
+    // every statement return array like
+    // var par = document.getElementsByTagName("p");
+    // var textInMiddleParagraph = par[1].innerHTML = "CHeck kar mErii jaan replace kardeya";
+    // console.log(textInMiddleParagraph);
+    // // all paragarph change the font family
+    // for (i = 0; i < par.length; i++) {
+    //     par[i].style.fontFamily = "Verdana, Geneva, sans-serif";
+    // }
+
+    // function swapPic() {
+    //     document.getElementById("before").src = "chocolates.jpg";
+    // }
+
+    // function makeInvisible() {
+    //     document.getElementById("ugly").className = "hidden";
+    // }
+
+
+
+    /// this funtion is create order list
+    // function placeAList() {
+    //     var listCreate = "<ol><li>Pakistan</li><li>Islamabad</li><li>Chigo</li></ol>";
+    //     document.getElementById("cityList").innerHTML = listCreate;
+    // }
+    // placeAList(); // calling a funtion
+
+
+    /// THis function work in zip file 
+    // function fillCity() {
+    //     var cityName;
+    //     var zipEntered = document.getElementById("zip").value;
+    //     switch (zipEntered) {
+    //         case "60608":
+    //             cityName = "Chicago";
+    //             break;
+    //         case "68114":
+    //             cityName = "Omaha";
+    //             break;
+    //         case "53212":
+    //             cityName = "Milwaukee";
+    //     }
+    //     document.getElementById("city").value = cityName;
+    // }
+
+    // this function is paragraph function
+    // function expandLoris() {
+    //     var expandText = "Slow lorises are a group of several species of trepsirrhine primates which \n make up the genus Nycticebus.They have a round head, narrow snout, large eyes, and a variety of \n distinctive coloration patterns that are species - dependent.The hands and feet of slow lorises have several \n adaptations that give them a pincer - like grip and enable them to grasp branches for long periods of time.\n Slow lorises have a toxic bite, a rare trait among mammals.";
+    //     document.getElementById("slowLoris").innerHTML = expandText;
+    // }
+
+</script>
+
+</html>

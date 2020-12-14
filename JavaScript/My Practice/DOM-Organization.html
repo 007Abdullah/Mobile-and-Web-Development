@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DOM Organization Chart </title>
+</head>
+
+<body>
+    <div id="cal">
+        <p>Southern Cal is sunny.</p>
+        <p>Northern Cal is rainy.</p>
+        <p>Eastern Cal is desert.</p>
+    </div>
+    <div id="ny">
+        <p>Urban NY is crowded.</p>
+        <p>Rural NY is sparse.</p>
+    </div>
+    <!-- <p>
+        this is first paragraph in document
+    </p>
+    <p>
+        this is Second paragraph in document
+    </p>
+    <p>
+        this is third paragraph in document
+    </p> -->
+</body>
+<script>
+    // var p = document.childNodes[0].childNodes[1].childNodes[1];
+    // var content = p.innerHTML;
+    var div = document.getElementById("ny");
+    var p = div.childNodes[1];
+    var content = p.innerHTML;
+    console.log(content); 
+</script>
+
+</html>
