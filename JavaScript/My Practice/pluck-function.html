@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pluck Function</title>
+</head>
+
+<body>
+    <input type="submit" onclick="pluck()" value="Pluck Randomly">
+    <label id="result"></label>
+</body>
+<script>
+    
+
+    function pluck(arr) {
+        arr = [1,2,4,5,6,5,2,15,56,1,54,8,6,15,446,46,154,54654,156465];
+        const randIndex = Math.floor(Math.random() * arr.length);
+        return document.getElementById("result").innerHTML = arr[randIndex];
+    }
+//    console.log(pluck());
+</script>
+
+</html>

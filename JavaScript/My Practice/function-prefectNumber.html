@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Number :</title>
+</head>
+
+<body>
+    <h1>Findout Number Prefect Number "True" Not Prefect Number "False"</h1>
+    <form action="#" onsubmit="return ISprefct()">
+        <label>Enter Number:</label>
+        <input type="number" id="users">
+        <input type="submit" value="Find">
+        <br>
+        <br>
+        <h2 id="results"></h2>
+    </form>
+
+</body>
+<script>
+    function ISprefct(user) {
+        user = parseInt(document.getElementById("users").value);
+        var Isfound = 0;
+        for (var i = 1; i <= user / 2; i++) {
+            if (user % i === 0) {
+                Isfound += i;
+            }
+        }
+        if (Isfound === user && Isfound !== 0) {
+            return document.getElementById("results").innerHTML = true;
+        }
+        else {
+            return document.getElementById("results").innerHTML = false;
+        }
+        return false;
+    }
+</script>
+
+</html>

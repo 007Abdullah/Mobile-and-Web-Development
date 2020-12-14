@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vovels Find</title>
+</head>
+
+<body>
+    <label>Enter Name and Find Vowels  :</label>
+    <input type="text" id="users">
+    <input type="submit" onclick="isVowel()" value="Find">
+    <br>
+    <br>
+    <br>
+    <h2 id="result"></h2>
+</body>
+<script>
+    function isVowel(str) {
+        str = document.getElementById("users").value;
+        let match = str.match(/[aeiou]/gi);
+        var count = match.length;
+        return (document.getElementById("result").innerText = (" " + str + "  " + "  " + " No Of Vowels  : " + count));
+    }
+
+
+
+
+</script>
+
+</html>
