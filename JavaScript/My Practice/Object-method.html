@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Method </title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var obj1 = {
+        name: "Sameer",
+        fname: "Younus",
+        rollno: 45627,
+        getdetails: function () {
+            console.log("This User Get Name : " + this.name);
+            console.log("This User Get fName : " + this.fname);
+            console.log("This User Get RollNO : " + this.rollno);
+        },
+        setdetails: function () {
+            console.log("This User set Name : " + this.name = "Abdullah Khan");
+            console.log("This User set fName : " + this.fname);
+            console.log("This User set RollNO : " + this.rollno);
+        }
+    }
+    obj1.getdetails();
+
+</script>
+
+</html>
