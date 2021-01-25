@@ -8,8 +8,17 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
+
   document.getElementById('root')
 );
+
+function Hi() {
+  return <div>Hello World ANYONE</div>
+}
+
+ReactDOM.render(<Hi />, document.querySelector('root'));
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
