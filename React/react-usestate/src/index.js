@@ -32,20 +32,37 @@ import './index.css';
 //   </>  
 //     , document.getElementById('root'));
 
-function Room() {
-  const [value, setvalue] = useState(true);
-  const birthness = value ? "Bright" : "Dark";
-  function abc() {
-    setvalue((previousValue) => !previousValue)
+// function Room() {
+//   const [value, setvalue] = useState(true);
+//   const birthness = value ? "Bright" : "Dark";
+//   function abc() {
+//     setvalue((previousValue) => !previousValue)
+//   }
+//   return (
+//     <div className={`room ${birthness}`}>
+//       <div>this room is {(value === true) ? "Bright" : "Dark"}</div>
+//       <button onClick={abc}> Flip </button>
+//     </div>
+//   )
+// }
+
+function Eing() {
+  // useState function jo han wo first value current walii or dusrii value ma jo huma screen par 
+  // print karna han change kar kae mtlb kae updated value miltii han or usestate ek array return 
+  // karta han or usestate ma second value ko hum function sa pass karty han example const [state] = useState() this line print to console.log(state) and see this
+  const [curnt, upValue] = useState(1);
+  function add() {
+    upValue((previousValue) => curnt + previousValue)
   }
+
   return (
-    <div className={`room ${birthness}`}>
-      <div>this room is {(value === true) ? "Bright" : "Dark"}</div>
-      <button onClick={abc}> Flip </button>
+    <div>
+      <h1>{curnt}</h1>
+      <button onClick={add}>Increment</button>
     </div>
   )
 }
 
 
-ReactDOM.render(<Room />,
+ReactDOM.render(<Eing />,
   document.querySelector("#root"))
